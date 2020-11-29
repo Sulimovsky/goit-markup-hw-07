@@ -69,6 +69,10 @@ p {
   text-align: center;
 }
 
+.header-line {
+  border-bottom: 1px solid #ECECEC;
+}
+
 .container-nav {
   display: flex;
 }
