@@ -1,0 +1,37 @@
+.list-quality .quality-item {
+    width: 270px;
+    height: 251px;
+}
+
+.quality-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.box-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}
+
+.icon-antenna {
+    width: 70px;
+    height: 70px;
+}
+
+.list-quality h2 {
+    margin-top: 30px;
+    color: $secondary-text-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.list-quality .description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+}
