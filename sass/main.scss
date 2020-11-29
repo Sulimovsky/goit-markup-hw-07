@@ -4,6 +4,7 @@
 @import './components/button';
 @import './components/modal';
 @import './components/form';
+@import './components/social-icons';
 
 /* Header */
 .container-header {
@@ -148,44 +149,6 @@ h1 {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.2;
-}
-
-.team-social-list {
-    display: inline-flex;
-    margin-top: 28px
-}
-
-.team-social-item:not(:last-child) {
-    margin-right: 10px;
-}
-
-.team-social-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-
-    transition: background-color 250ms $main-cubic-bezier;
-}
-
-.team-social-link:hover,
-.team-social-link:focus {
-    background-color: $backlight-color;
-}
-
-.team-social-link:hover .team-social-icon,
-.team-social-link:focus .team-social-icon {
-    fill: $white-color;
-}
-
-.team-social-icon {
-    fill: $primary-icon-color;
-    width: 20px;
-    height: 20px;
-
-    transition: fill 250ms $main-cubic-bezier;
 }
 
 /* Client */
