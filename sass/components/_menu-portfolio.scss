@@ -1,0 +1,112 @@
+.container-nav {
+    display: flex;
+}
+
+.logo {
+    padding-bottom: 25px;
+    padding-top: 24px;
+    margin-right: 93px;
+    color: $secondary-text-color;
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.logo .logo-one {
+    color: $backlight-color;
+}
+
+.list-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header-link {
+    position: relative;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $secondary-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    transition: color 250ms $main-cubic-bezier;
+}
+
+.header-link .location {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $backlight-color;
+    transition: color 250ms $main-cubic-bezier;
+}
+
+.location::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $backlight-color;
+    transition: background-color 250ms $main-cubic-bezier;
+}
+
+.location:hover::after {
+    background-color: $secondary-text-color;
+}
+
+.header-link .location:focus,
+.header-link .location:hover {
+    color: $secondary-text-color;
+}
+
+.header-link:hover,
+.header-link:focus {
+    color: $backlight-color;
+}
+
+.list-contacts {
+    margin-left: auto;
+}
+
+.list-contacts .item + .item {
+    margin-left: 50px;
+}
+
+.contacts-link {
+    display: flex;
+    align-items: center;
+    color: $primary-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    transition: color 250ms $main-cubic-bezier;
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+    color: $backlight-color;
+}
+
+.contacts-link:hover .icon-link,
+.contacts-link:focus .icon-link {
+    fill: $backlight-color;
+}
+
+
+.icon-link {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: $primary-text-color;
+    transition: fill 250ms $main-cubic-bezier;
+}
+
+.smartphone {
+    width: 10px;
+    height: 16px;
+}

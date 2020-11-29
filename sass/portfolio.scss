@@ -1,165 +1,6 @@
 @import './utils/variables';
-
-body {
-    color: $primary-text-color;
-
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 0.03em;
-}
-
-li,
-a {
-    list-style: none;
-    text-decoration: none;
-}
-
-h1, 
-h2, 
-h3, 
-p {
-    margin-top: 0;
-}
-
-img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-p {
-    padding: 0;
-    margin: 0;
-}
-
-.list {
-    display: flex;
-}
-
-.utility-mp {
-    padding: 0;
-    margin: 0;
-}
-
-.container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.container-nav {
-    display: flex;
-}
-
-.logo {
-    padding-bottom: 25px;
-    padding-top: 24px;
-    margin-right: 93px;
-    color: $secondary-text-color;
-    font-family: 'Raleway', sans-serif;
-    font-size: 26px;
-    line-height: 1.2;
-    font-weight: 700;
-}
-
-.logo .logo-one {
-    color: $backlight-color;
-}
-
-.list-nav .item:not(:last-child) {
-    margin-right: 50px;
-}
-
-.header-link {
-    position: relative;
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    color: $secondary-text-color;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-    transition: color 250ms $main-cubic-bezier;
-}
-
-.header-link .location {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    color: $backlight-color;
-    transition: color 250ms $main-cubic-bezier;
-}
-
-.location::after {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    content: "";
-    display: inline-block;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: $backlight-color;
-    transition: background-color 250ms $main-cubic-bezier;
-}
-
-.location:hover::after {
-    background-color: $secondary-text-color;
-}
-
-.header-link .location:focus,
-.header-link .location:hover {
-    color: var(--secondary-text-color);
-}
-
-.header-link:hover,
-.header-link:focus {
-    color: var(--backlight-color);
-}
-
-.list-contacts {
-    margin-left: auto;
-}
-
-.list-contacts .item + .item {
-    margin-left: 50px;
-}
-
-.contacts-link {
-    display: flex;
-    align-items: center;
-    color: $primary-text-color;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-    transition: color 250ms var(--main-cubic-bezier);
-}
-
-.contacts-link:hover,
-.contacts-link:focus {
-    color: var(--backlight-color);
-}
-
-.contacts-link:hover .icon-link,
-.contacts-link:focus .icon-link {
-    fill: var(--backlight-color);
-}
-
-
-.icon-link {
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    fill: $primary-text-color;
-    transition: fill 250ms var(--main-cubic-bezier);
-}
-
-.smartphone {
-    width: 10px;
-    height: 16px;
-}
+@import './base/common';
+@import './components/menu-portfolio';
 
 /* Header */
 header {
@@ -191,7 +32,7 @@ header {
 
 .filter button {
     cursor: pointer;
-    transition: all 250ms var(--main-cubic-bezier);
+    transition: all 250ms $main-cubic-bezier;
 }
 
 .btn-one {
@@ -220,7 +61,7 @@ header {
 }
 
 .filter button {
-    color: var(--secondary-text-color);
+    color: $secondary-text-color;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
@@ -232,9 +73,9 @@ header {
 
 .filter button:hover,
 .filter button:focus {
-    color: #FFFFFF;
-    background-color: var(--backlight-color);
-    border-color: var(--backlight-color);
+    color: $white-color;
+    background-color: $backlight-color;
+    border-color: $backlight-color;
 }
 
 /* Job List */
@@ -299,7 +140,7 @@ header {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.55;
-    color: #FFFFFF;
+    color: $white-color;
     z-index: 2;
 }
 
@@ -307,7 +148,7 @@ header {
     padding-top: 20px;
     margin-bottom: 4px;
     padding-left: 24px;
-    color: var(--heading-h2-h6-color);
+    color: $secondary-text-color;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -335,11 +176,11 @@ footer {
 }
 
 .logo-footer {
-    color: var(--backlight-color);
+    color: $backlight-color;
 }
 
 .logo-two {
-    color: #FFFFFF;
+    color: $white-color;
 }
 
 .contacts-street {
@@ -351,7 +192,7 @@ footer {
 }
 
 .item-address .street {
-    color: #FFFFFF;
+    color: $white-color;
 }
 
 .contacts-footer {
@@ -376,7 +217,7 @@ footer {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: $white-color;
 }
 
 .footer-social-list {
@@ -398,21 +239,21 @@ footer {
 
     background-color: rgba(255, 255, 255, 0.1);
 
-    transition: background-color 250ms var(--main-cubic-bezier);
+    transition: background-color 250ms $main-cubic-bezier;
 }
 
 .footer-social-link:hover,
 .footer-social-link:focus {
-    background-color: var(--backlight-color);
+    background-color: $backlight-color;
 }
 
 .footer-social-link:hover .team-social-icon,
 .footer-social-link:focus .team-social-icon {
-    fill: #FFFFFF;
+    fill: $white-color;
 }
 
 .footer-social-icon {
-    fill: #FFFFFF;
+    fill: $white-color;
     width: 20px;
     height: 20px;
 }
@@ -430,7 +271,7 @@ footer {
     line-height: 1.14;
     text-transform: uppercase;
 
-    color: #FFFFFF;
+    color: $white-color;
 }
 
 .footer-form {
@@ -447,7 +288,7 @@ footer {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
-    color: #FFFFFF;
+    color: $white-color;
 
     background-color: transparent;
 }
@@ -464,16 +305,16 @@ footer {
     align-items: center;
     border-radius: 4px;
     border-style: solid;
-    border-color: var(--backlight-color);
+    border-color: $backlight-color;
     min-width: 200px;
     padding-left: 28px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    background-color: var(--backlight-color);
+    background-color: $backlight-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    color: #FFFFFF;
+    color: $white-color;
     cursor: pointer;
     transition: 
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -485,19 +326,18 @@ footer {
     width: 24px;
     height: 24px;
     margin: 10px;
-    fill: #FFFFFF;
+    fill: $white-color;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .send-btn:hover,
 .send-btn:focus {
-    color: var(--backlight-color);
-    background-color: #FFFFFF;
-    border-color: #FFFFFF;
+    color: $backlight-color;
+    background-color: $white-color;
 }
 
 .send-btn:hover .send-icon,
 .send-btn:focus .send-icon {
-    fill: var(--backlight-color);
+    fill: $backlight-color;
 }
 

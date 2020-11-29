@@ -1,7 +1,7 @@
 body {
-  color: #757575;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
+  color: #757575;
 }
 
 li,
@@ -12,8 +12,7 @@ a {
 
 h1,
 h2,
-h3,
-p {
+h3 {
   margin-top: 0;
 }
 
@@ -24,8 +23,8 @@ img {
 }
 
 p {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .list {
@@ -37,12 +36,37 @@ p {
   margin: 0;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.heading {
+  margin-bottom: 50px;
+  color: #212121;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
 }
 
 .container-nav {
@@ -107,12 +131,12 @@ p {
 
 .header-link .location:focus,
 .header-link .location:hover {
-  color: var(--secondary-text-color);
+  color: #212121;
 }
 
 .header-link:hover,
 .header-link:focus {
-  color: var(--backlight-color);
+  color: #2196F3;
 }
 
 .list-contacts {
@@ -131,17 +155,17 @@ p {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  transition: color 250ms var(--main-cubic-bezier);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link:hover,
 .contacts-link:focus {
-  color: var(--backlight-color);
+  color: #2196F3;
 }
 
 .contacts-link:hover .icon-link,
 .contacts-link:focus .icon-link {
-  fill: var(--backlight-color);
+  fill: #2196F3;
 }
 
 .icon-link {
@@ -149,7 +173,7 @@ p {
   height: 12px;
   margin-right: 10px;
   fill: #757575;
-  transition: fill 250ms var(--main-cubic-bezier);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .smartphone {
@@ -187,7 +211,7 @@ header {
 
 .filter button {
   cursor: pointer;
-  transition: all 250ms var(--main-cubic-bezier);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-one {
@@ -216,7 +240,7 @@ header {
 }
 
 .filter button {
-  color: var(--secondary-text-color);
+  color: #212121;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -229,8 +253,8 @@ header {
 .filter button:hover,
 .filter button:focus {
   color: #FFFFFF;
-  background-color: var(--backlight-color);
-  border-color: var(--backlight-color);
+  background-color: #2196F3;
+  border-color: #2196F3;
 }
 
 /* Job List */
@@ -300,7 +324,7 @@ header {
   padding-top: 20px;
   margin-bottom: 4px;
   padding-left: 24px;
-  color: var(--heading-h2-h6-color);
+  color: #212121;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -328,7 +352,7 @@ footer {
 }
 
 .logo-footer {
-  color: var(--backlight-color);
+  color: #2196F3;
 }
 
 .logo-two {
@@ -389,12 +413,12 @@ footer {
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color 250ms var(--main-cubic-bezier);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link:hover,
 .footer-social-link:focus {
-  background-color: var(--backlight-color);
+  background-color: #2196F3;
 }
 
 .footer-social-link:hover .team-social-icon,
@@ -452,14 +476,14 @@ footer {
   align-items: center;
   border-radius: 4px;
   border-style: solid;
-  border-color: var(--backlight-color);
+  border-color: #2196F3;
   min-width: 200px;
   padding-left: 28px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  background-color: var(--backlight-color);
+  background-color: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: #FFFFFF;
   cursor: pointer;
@@ -476,13 +500,12 @@ footer {
 
 .send-btn:hover,
 .send-btn:focus {
-  color: var(--backlight-color);
+  color: #2196F3;
   background-color: #FFFFFF;
-  border-color: #FFFFFF;
 }
 
 .send-btn:hover .send-icon,
 .send-btn:focus .send-icon {
-  fill: var(--backlight-color);
+  fill: #2196F3;
 }
 /*# sourceMappingURL=portfolio.css.map */
