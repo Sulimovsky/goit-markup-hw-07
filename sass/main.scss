@@ -13,44 +13,5 @@
 @import './layouts/occupation';
 @import './layouts/team';
 @import './layouts/client';
-
-
-/* Footer */
-footer {
-    background-color: #2F303A;
-}
-
-.container-footer {
-    padding-top: 60px;
-    height: 252px;
-    display: flex;
-}
-
-.logo-footer {
-    color: $backlight-color;
-}
-
-.logo-two {
-    color: $white-color;
-}
-
-.contacts-street {
-    margin-top: 20px;
-}
-
-.contacts-list:not(:last-child) {
-    margin-bottom: 9px;
-}
-
-.item-address .street {
-    color: $white-color;
-}
-
-.contacts-footer {
-    color: rgba(255, 255, 255, 0.6);            
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    font-style: normal;
-}
+@import './layouts/footer';
 
