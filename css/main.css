@@ -369,7 +369,7 @@ p {
 }
 
 .checkbox:checked + .check-icon {
-  background-image: url(../img/checkbox/icon-check.svg), url(../img/checkbox/chek-enabled.svg);
+  background-image: url(../images/checkbox/icon-check.svg), url(../images/checkbox/chek-enabled.svg);
 }
 
 .check-icon {
@@ -379,7 +379,7 @@ p {
   transform: translateY(-50%);
   width: 16px;
   height: 15px;
-  background-image: url(../img/checkbox/chek-disabled.svg);
+  background-image: url(../images/checkbox/chek-disabled.svg);
 }
 
 .check-label {
@@ -585,7 +585,7 @@ p {
 .hero {
   min-height: 600px;
   background-color: #2F303A;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;

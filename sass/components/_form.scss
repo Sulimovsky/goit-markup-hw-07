@@ -107,7 +107,7 @@
 }
 
 .checkbox:checked + .check-icon {
-    background-image: url(../img/checkbox/icon-check.svg), url(../img/checkbox/chek-enabled.svg);
+    background-image: url(../images/checkbox/icon-check.svg), url(../images/checkbox/chek-enabled.svg);
 }
 
 .check-icon {
@@ -117,7 +117,7 @@
     transform: translateY(-50%);
     width: 16px;
     height: 15px;
-    background-image: url(../img/checkbox/chek-disabled.svg);
+    background-image: url(../images/checkbox/chek-disabled.svg);
 }
 
 .check-label {
